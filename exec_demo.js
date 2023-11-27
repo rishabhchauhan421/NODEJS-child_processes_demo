@@ -1,5 +1,6 @@
 const { exec } = require('child_process');
 
+//'find /' is the command, you can also try "mkdir rishabh" or "pwd"
 exec('find /', (error, stdout, stderr) => {
   if (error) {
     console.log(`error: ${error.message}`);
